@@ -75,7 +75,7 @@ function DashboardOverview() {
   return (
     <>
       <Helmet>
-        <title>Dashboard - Gold Coast Admin</title>
+        <title>GoldCoastHair-Dashboard</title>
         <meta name="description" content="Gold Coast Honey admin dashboard overview" />
       </Helmet>
 

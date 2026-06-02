@@ -37,7 +37,7 @@ function AdminLoginPage() {
   return (
     <>
       <Helmet>
-        <title>Admin Login - Gold Coast Hair</title>
+        <title>GoldCoastHair-Admin</title>
         <meta name="description" content="Secure admin login for Gold Coast Hair" />
       </Helmet>
 
