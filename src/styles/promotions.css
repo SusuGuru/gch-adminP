@@ -1,0 +1,75 @@
+.promotions-page {
+  flex: 1;
+  padding: 40px;
+  background: #f7f8fa;
+  min-height: 100vh;
+}
+
+.promotions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.promotions-header h1 {
+  font-size: 58px;
+  color: #003d4d;
+  margin-bottom: 10px;
+}
+
+.promotions-header p {
+  color: #1b8792;
+  font-size: 18px;
+}
+
+.add-promo-btn {
+  background: #cda75a;
+  color: white;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.empty-promotions-card {
+  height: 380px;
+  background: white;
+  border-radius: 22px;
+  border: 1px solid #e7ecee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-icon {
+  font-size: 70px;
+  color: #b65cff;
+  margin-bottom: 20px;
+}
+
+.empty-promotions-card h2 {
+  font-size: 40px;
+  color: #003d4d;
+  margin-bottom: 10px;
+}
+
+.empty-promotions-card p {
+  font-size: 20px;
+  color: #1b8792;
+  margin-bottom: 25px;
+}
+
+.empty-promo-btn {
+  background: white;
+  border: 1px solid #d9e0e3;
+  padding: 14px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+}

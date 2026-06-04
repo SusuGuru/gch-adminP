@@ -41,15 +41,10 @@ export default function Sidebar() {
             <span>Products</span>
           </NavLink>
 
-          <NavLink
-            to="/orders"
-            className={({ isActive }) =>
-              isActive ? "nav-item active" : "nav-item"
-            }
-          >
-            <FiShoppingCart />
-            <span>Orders</span>
-          </NavLink>
+          <NavLink to="/orders" className="nav-item">
+  <FiShoppingCart />
+  <span>Orders</span>
+</NavLink>
 
           <NavLink
             to="/promotions"
