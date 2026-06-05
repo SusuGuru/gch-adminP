@@ -9,8 +9,13 @@ import {
 
 import { NavLink } from "react-router-dom";
 import "../styles/sidebar.css";
-
+import { useNavigate } from "react-router-dom";
 export default function Sidebar() {
+  const navigate = useNavigate();
+
+const handleLogout = () => {
+  navigate("/");
+};
   return (
     <aside className="sidebar">
       <div className="sidebar-top">
@@ -68,10 +73,13 @@ export default function Sidebar() {
         </nav>
       </div>
 
-      <button className="logout-btn">
-        <FiLogOut />
-        <span>Logout</span>
-      </button>
+      <button
+  className="logout-btn"
+  onClick={handleLogout}
+>
+  <FiLogOut />
+  <span>Logout</span>
+</button>
     </aside>
   );
 }

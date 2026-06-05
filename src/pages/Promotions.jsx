@@ -1,8 +1,15 @@
 import { FiTag, FiPlus } from "react-icons/fi";
 import Sidebar from "../components/Sidebar";
 import "../styles/promotions.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Promotions() {
+  const navigate = useNavigate();
+
+const handleAddPromotion = () => {
+  navigate("/add-promotion");
+};
+
   return (
     <div className="dashboard">
       <Sidebar />
@@ -16,10 +23,13 @@ export default function Promotions() {
             </p>
           </div>
 
-          <button className="add-promo-btn">
-            <FiPlus />
-            Create Promotion
-          </button>
+          <button
+  className="add-promo-btn"
+  onClick={handleAddPromotion}
+>
+  <FiPlus />
+  Create Promotion
+</button>
         </div>
 
         <div className="empty-promotions-card">

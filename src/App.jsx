@@ -7,7 +7,7 @@ import EditProduct from "./pages/EditProduct";
 import Orders from "./pages/Orders";
 import Promotions from "./pages/Promotions";
 import Settings from "./pages/Settings";
-
+import AddPromotion from "./pages/AddPromotion";
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
   <Route path="/orders" element={<Orders />} />
   <Route path="/promotions" element={<Promotions />} />
 <Route path="/settings" element={<Settings />} />
+<Route path="/add-promotion" element={<AddPromotion />} />
 </Routes>
 
     </BrowserRouter>

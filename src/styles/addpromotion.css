@@ -1,0 +1,103 @@
+.add-promotion-page {
+  flex: 1;
+  padding: 40px;
+  background: #f7f8fa;
+  min-height: 100vh;
+}
+
+.promotion-header {
+  margin-bottom: 30px;
+}
+
+.promotion-header h1 {
+  font-size: 48px;
+  color: #003d4d;
+  margin-bottom: 10px;
+}
+
+.promotion-header p {
+  color: #1b8792;
+  font-size: 18px;
+}
+
+.promotion-card {
+  background: white;
+  border-radius: 22px;
+  padding: 35px;
+  max-width: 900px;
+  border: 1px solid #e7ecee;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.promotion-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #003d4d;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 14px;
+  border: 1px solid #d9dfe2;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.save-promotion-btn {
+  background: #cda75a;
+  color: white;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 220px;
+}
+
+.save-promotion-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .add-promotion-page {
+    padding: 20px;
+  }
+
+  .promotion-card {
+    padding: 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .promotion-header h1 {
+    font-size: 34px;
+  }
+
+  .save-promotion-btn {
+    width: 100%;
+  }
+}
